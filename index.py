@@ -8,7 +8,7 @@ from langchain.llms.openai import OpenAI
 
 # Define a simple Streamlit app
 st.title("Ask Llama")
-query = st.text_input("What would you like to ask? (source: data/paul_graham_essay.txt)", "")
+query = st.text_input("What would you like to ask? (source: DATA)", "")
 
 # If the 'Submit' button is clicked
 if st.button("Submit"):
