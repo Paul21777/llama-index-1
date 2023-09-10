@@ -31,4 +31,4 @@ USER appuser
 EXPOSE 8501
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "-m", "streamlit run index.py"]
+CMD ["python", "-m", "streamlit", "run", "index.py"]
