@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/Paul21777/llama-index-1.git .
 
 
-RUN python -m pip install -r llama-index-1/requirements.txt
+RUN python -m pip install -r requirements.txt
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
@@ -31,4 +31,4 @@ USER appuser
 EXPOSE 8501
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "-m", "streamlit run llama-index-1/index.py"]
+CMD ["python", "-m", "streamlit run index.py"]
